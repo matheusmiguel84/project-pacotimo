@@ -1,0 +1,43 @@
+.mat-card-travel{
+    border-radius: 4px 3px 6px / 2px 4px; 
+    padding-top: 15px; 
+    padding-left: 0%; 
+    padding-right: 0%; 
+    padding-bottom: 0%;
+    margin: 5px;
+}
+
+
+.mat-card-title-travel{
+    padding-left:10px; 
+    padding-top: 0px; 
+    padding-right: 15px; 
+    margin-bottom: 0px; 
+}
+
+
+
+.mat-chip-title-travel{
+    padding-left:10px; 
+    padding-top: 0px; 
+    padding-right: 15px; 
+    padding-bottom: 10px;
+    margin-bottom: 0px; 
+}
+
+.mat-chip-date{
+    font-size: 0,4rem;
+    color: black !important;
+}
+
+
+.logo {
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }

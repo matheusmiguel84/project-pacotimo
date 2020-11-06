@@ -1,0 +1,30 @@
+<div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%; padding-left: 10%;">
+    <ng-container *ngFor="let travel of PackagesFiltered" style="margin: 0.5%; justify-content: center;">
+        <mat-card class="mat-card-travel"
+       
+        fxFlex.lt-sm="100%">
+        <img class="logo" src="{{travel.imageUrl}}" alt="{{travel.city}}">
+
+            <mat-card-content>
+              
+              <mat-card-title class="mat-card-title-travel">
+                <div class="row">
+                  <p>
+                        <span style="font-size:1.5rem;" fxFlex="70" fxLayoutAlign="start center">{{travel.city}}</span>
+                    <span fxFlex></span>
+                  </p>
+                </div>
+              </mat-card-title>
+              <mat-chip selected="true" fxLayoutAlign="center center" class="mat-chip-title-travel">
+                <span style="font-size: 1,6rem; font-weight: 500; margin-bottom: auto;" fxFlex="70">{{travel.price | currencyformat}}</span>
+                <div >
+                  <span fxFlex></span>
+                  <span style="font-size: 0,2rem; margin:-11.5%;  margin-right: 2%; margin-bottom: auto" fxFlex="60"> <span>Ida</span> {{travel.inboundDate | localDateTime}}</span>
+                  <span fxFlex></span>
+                  <span style="font-size: 0,2rem; margin: -11.5%; margin-bottom: auto; padding-right: 10px;" fxFlex="55"> <span>Volta</span> {{travel.outboundDate | localDateTime}}</span>
+                </div>
+              </mat-chip>
+            </mat-card-content>
+          </mat-card>
+    </ng-container>
+</div>
