@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LocalDateTimePipe } from './pipe/local-date-time.pipe';
 import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
 import { CurrencyformatPipe } from './pipe/currencyformat.pipe';
+import { SearchFilterPipe } from './pipe/search-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CurrencyformatPipe } from './pipe/currencyformat.pipe';
     HomeComponent,
     TravelListComponent,
     LocalDateTimePipe,
-    CurrencyformatPipe
+    CurrencyformatPipe,
+    SearchFilterPipe
     ],
   imports: [
     HttpClientModule,

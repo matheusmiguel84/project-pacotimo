@@ -1,7 +1,8 @@
-<div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%; padding-left: 10%;">
-    <ng-container *ngFor="let travel of PackagesFiltered" style="margin: 0.5%; justify-content: center;">
+<div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%;">
+    <ng-container *ngFor="let travel of PackagesFiltered " style="margin: 0.5%; justify-content: center;">
         <mat-card class="mat-card-travel"
-       
+        fxFlex="0 1 calc(33.3% - 11px)"
+        fxFlex.lt-md="0 1 calc(50% - 11px)"
         fxFlex.lt-sm="100%">
         <img class="logo" src="{{travel.imageUrl}}" alt="{{travel.city}}">
 

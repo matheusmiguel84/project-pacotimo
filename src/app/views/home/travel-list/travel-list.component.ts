@@ -42,8 +42,8 @@ export class TravelListComponent implements OnInit {
           let hotel = arrHotel.filter(h => h.iata == f.arrivalAirport)
           console.log(hotel);
           hotel.map(a => {
-            f.hotel = a.name;
-            f.price += a.pricePerNight;
+             f.hotel = a.name;
+             f.price += a.pricePerNight;
           });
           arr = hotel;
           return Flights;
