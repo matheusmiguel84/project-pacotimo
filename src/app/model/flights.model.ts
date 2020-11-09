@@ -6,7 +6,7 @@ export class Flights {
     arrivalAirport: string;
     outboundDate: number;
     inboundDate: number;
-  hotel: string;
-  imageUrl: string;
-  city: string;
+    hotel: string;
+    imageUrl: string;
+    city: string;
 }

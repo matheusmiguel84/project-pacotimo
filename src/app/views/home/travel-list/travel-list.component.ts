@@ -40,6 +40,7 @@ export class TravelListComponent implements OnInit {
         let Flights = arrFly.filter(f => f.departureAirport == "CNF"); 
         let filterPackages = Flights.map(f => {
           let hotel = arrHotel.filter(h => h.iata == f.arrivalAirport)
+                              
           console.log(hotel);
           hotel.map(a => {
              f.hotel = a.name;
@@ -71,20 +72,5 @@ export class TravelListComponent implements OnInit {
     })
   })
 }
-
-// SearchFilter(searchValue: any){
-//   if (searchValue.length >= 3) {
-//     this.rowData = this.PackagesFiltered.filter((data: ) => {
-//       console.log(data['sensor']);
-//     });
-
-    
-//   } else if (searchValue.length < 1) {
-//     console.log('empty')
-//   }
-
-
-// }
-
   
 }
