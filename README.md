@@ -7,7 +7,6 @@ Observação: Ficou faltando o ng-filter para a barra de pesquisa funcionar.
 
 ## Configuração de projeto
 ### Pré-requisitos
-* [NodeJs](https://nodejs.org/en/)
 * Gerenciador de pacote ([npm](https://www.npmjs.com/get-npm)
 
 ### Instalando pacotes
