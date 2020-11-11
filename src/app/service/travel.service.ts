@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { hotels } from '../model/hotels.model';
-import { Iata } from '../model/Iata.model';
-import { Flights } from '../model/Flights.model';
+import { hotels } from '../../app/model/hotels.model';
+import { Iata } from '../../app/model/Iata.model';
+import { Flights } from '../../app/model/Flights.model';
 
 
 
