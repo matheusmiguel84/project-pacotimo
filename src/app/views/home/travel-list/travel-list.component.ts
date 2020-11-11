@@ -39,15 +39,23 @@ export class TravelListComponent implements OnInit {
         let arrHotel = Object.values(this.Hotels[0])
         let Flights = arrFly.filter(f => f.departureAirport == "CNF"); 
         let filterPackages = Flights.map(f => {
-        let hotel = arrHotel.filter(h => h.iata == f.arrivalAirport).reduce((a,b)=>{
-          if(b.currentTasks < a.currentTasks) a = b;
-              f.hotel = a.name;
-              f.price += a.pricePerNight;
-          return a;
-       });
-       
-       console.log(hotel);        
-          
+        let hotel = arrHotel.filter(h => h.iata == f.arrivalAirport)
+
+
+        if(hotel.length > 1){
+          hotel.reduce((a,b)=>{
+            if(b.currentTasks < a.currentTasks) a = b;
+            f.hotel = a.name;
+            f.price += a.pricePerNight;
+            return a;
+          });
+        }else{
+          hotel.map(a => {
+            f.hotel = a.name;
+            f.price += a.pricePerNight;
+            
+          });
+        }        
           arr = hotel;
           return Flights;
         });
